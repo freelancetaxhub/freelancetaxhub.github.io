@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quarterly Estimated Tax Calculator 2026</title>
+<meta name="description" content="Calculate your quarterly estimated tax payments for 2026 as a freelancer or self-employed professional.">
+<style>
+body{font-family:Arial;margin:0;background:#fff;}
+.container{max-width:900px;margin:auto;padding:20px;}
+.box{background:#f4f6f8;padding:20px;border-radius:8px;}
+input,button{width:100%;padding:10px;margin:8px 0;}
+button{background:#0A3D62;color:#fff;border:none;}
+.result{background:#eaf2f8;padding:15px;margin-top:10px;}
+a{color:#0A3D62;text-decoration:none;}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Quarterly Estimated Tax Calculator 2026</h1>
+
+<div class="box">
+<label>Expected Annual Net Income ($)</label>
+<input type="number" id="income">
+<button onclick="calc()">Calculate Quarterly Payment</button>
+<div class="result" id="result"></div>
+</div>
+
+<p><a href="index.html">← Back to Home</a></p>
+</div>
+
+<script>
+function calc(){
+var income=parseFloat(document.getElementById("income").value)||0;
+var annualTax=(income*0.153)+(income*0.22);
+var quarterly=annualTax/4;
+document.getElementById("result").innerHTML=
+"Estimated Annual Tax: $"+annualTax.toFixed(2)+"<br>"+
+"<strong>Quarterly Payment: $"+quarterly.toFixed(2)+"</strong>";
+}
+</script>
+</body>
+</html>
