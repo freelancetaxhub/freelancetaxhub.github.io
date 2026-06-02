@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Take Home Pay Calculator for Freelancers</title>
+<meta name="description" content="Estimate your take-home income after taxes as a freelancer or 1099 contractor.">
+<style>
+body{font-family:Arial;margin:0;background:#fff;}
+.container{max-width:900px;margin:auto;padding:20px;}
+.box{background:#f4f6f8;padding:20px;border-radius:8px;}
+input,button{width:100%;padding:10px;margin:8px 0;}
+button{background:#0A3D62;color:#fff;border:none;}
+.result{background:#eaf2f8;padding:15px;margin-top:10px;}
+a{color:#0A3D62;text-decoration:none;}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Freelancer Take-Home Pay Calculator</h1>
+
+<div class="box">
+<label>Annual Net Income ($)</label>
+<input type="number" id="income">
+<button onclick="calc()">Calculate</button>
+<div class="result" id="result"></div>
+</div>
+
+<p><a href="index.html">← Back to Home</a></p>
+</div>
+
+<script>
+function calc(){
+var income=parseFloat(document.getElementById("income").value)||0;
+var totalTax=(income*0.153)+(income*0.22);
+var takehome=income-totalTax;
+document.getElementById("result").innerHTML=
+"Total Estimated Tax: $"+totalTax.toFixed(2)+"<br>"+
+"<strong>Estimated Take-Home Pay: $"+takehome.toFixed(2)+"</strong>";
+}
+</script>
+</body>
+</html>
