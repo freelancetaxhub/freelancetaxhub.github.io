@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Freelance Tax Calculator 2026 (USA) – Free Self-Employed Tax Estimator</title>
+<meta name="description" content="Free 2026 freelance tax calculator for US self-employed individuals. Estimate federal tax and self-employment tax instantly.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://freelancetaxhub.github.io/freelance-tax-calculator-2026.html">
+
+<style>
+body { font-family: Arial, sans-serif; margin: 0; background: #fff; color: #222; }
+.container { max-width: 800px; margin: auto; padding: 20px; }
+h1 { color: #0A3D62; }
+.calculator-box { background: #f4f6f8; padding: 20px; border-radius: 8px; }
+input, button { width: 100%; padding: 10px; margin: 8px 0; font-size: 16px; }
+button { background: #0A3D62; color: #fff; border: none; cursor: pointer; }
+button:hover { background: #074072; }
+.result { background: #eaf2f8; padding: 15px; margin-top: 10px; border-radius: 5px; }
+a { color: #0A3D62; text-decoration: none; }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Freelance Tax Calculator 2026 (USA)</h1>
+
+<p>Use this free calculator to estimate your self-employment tax and federal income tax as a freelancer or 1099 contractor in the United States.</p>
+
+<div class="calculator-box">
+
+<label>Annual Income ($)</label>
+<input type="number" id="income" placeholder="Enter your total income">
+
+<label>Business Expenses ($)</label>
+<input type="number" id="expenses" placeholder="Enter deductible expenses">
+
+<button onclick="calculateTax()">Calculate</button>
+
+<div class="result" id="result"></div>
+
+</div>
+
+<p><a href="index.html">← Back to Home</a></p>
+
+</div>
+
+<script>
+function calculateTax() {
+    var income = parseFloat(document.getElementById("income").value) || 0;
+    var expenses = parseFloat(document.getElementById("expenses").value) || 0;
+
+    var net = income - expenses;
+    if (net < 0) net = 0;
+
+    var selfEmploymentTax = net * 0.153;
+    var incomeTax = net * 0.22;
+    var total = selfEmploymentTax + incomeTax;
+
+    document.getElementById("result").innerHTML =
+        "<strong>Net Income:</strong> $" + net.toFixed(2) + "<br>" +
+        "<strong>Self-Employment Tax (15.3%):</strong> $" + selfEmploymentTax.toFixed(2) + "<br>" +
+        "<strong>Estimated Income Tax (~22%):</strong> $" + incomeTax.toFixed(2) + "<br>" +
+        "<strong>Total Estimated Tax:</strong> $" + total.toFixed(2);
+}
+</script>
+
+</body>
+</html>
