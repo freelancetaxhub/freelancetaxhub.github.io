@@ -1,32 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Self-Employment Tax Calculator 2026</title>
-<meta name="description" content="Calculate 15.3% self-employment tax for freelancers and independent contractors.">
+
+<title>Self-Employment Tax Calculator 2026 – 15.3% SE Tax Estimator</title>
+
+<meta name="description" content="Calculate your 2026 self-employment tax (15.3%) as a freelancer or independent contractor in the USA. Free SE tax estimator tool.">
+
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://freelancetaxhub.github.io/self-employment-tax-calculator.html">
+
 <style>
-body{font-family:Arial;margin:0;background:#fff;}
-.container{max-width:900px;margin:auto;padding:20px;}
-.box{background:#f4f6f8;padding:20px;border-radius:8px;}
-input,button{width:100%;padding:10px;margin:8px 0;}
-button{background:#0A3D62;color:#fff;border:none;}
-.result{background:#eaf2f8;padding:15px;margin-top:10px;}
-a{color:#0A3D62;text-decoration:none;}
+body { font-family: Arial; margin:0; background:#fff; color:#222; line-height:1.6; }
+.container { max-width:900px; margin:auto; padding:20px; }
+h1,h2 { color:#0A3D62; }
+.box { background:#f4f6f8; padding:20px; border-radius:8px; margin:20px 0; }
+input,button { width:100%; padding:12px; margin:8px 0; font-size:16px; }
+button { background:#0A3D62; color:#fff; border:none; cursor:pointer; }
+.result { background:#eaf2f8; padding:15px; margin-top:10px; border-radius:5px; }
+.ad { background:#fffbe6; padding:15px; margin:20px 0; text-align:center; border:1px dashed #ccc; }
+a { color:#0A3D62; }
 </style>
 </head>
+
 <body>
 <div class="container">
-<h1>Self-Employment Tax Calculator (15.3%)</h1>
+
+<h1>Self-Employment Tax Calculator (15.3%) – 2026</h1>
+
+<p>The <strong>self-employment tax</strong> is 15.3% of net earnings and covers Social Security (12.4%) and Medicare (2.9%). Use this calculator to estimate your SE tax for 2026.</p>
+
+<div class="ad">Advertisement</div>
 
 <div class="box">
+
 <label>Net Self-Employment Income ($)</label>
 <input type="number" id="income">
-<button onclick="calc()">Calculate</button>
+
+<button onclick="calc()">Calculate Self-Employment Tax</button>
+
 <div class="result" id="result"></div>
+
 </div>
 
+<h2>What Is Self-Employment Tax?</h2>
+
+<p>Self-employed individuals must pay both employer and employee portions of Social Security and Medicare taxes. This totals 15.3%.</p>
+
+<h2>2026 SE Tax Breakdown</h2>
+
+<ul>
+<li>12.4% Social Security (up to income cap)</li>
+<li>2.9% Medicare (no income cap)</li>
+<li>Additional 0.9% Medicare for high earners</li>
+</ul>
+
+<h2>Who Pays Self-Employment Tax?</h2>
+
+<ul>
+<li>Freelancers</li>
+<li>Independent contractors</li>
+<li>Sole proprietors</li>
+<li>Gig workers</li>
+</ul>
+
 <p><a href="index.html">← Back to Home</a></p>
+
 </div>
 
 <script>
@@ -34,8 +74,9 @@ function calc(){
 var income=parseFloat(document.getElementById("income").value)||0;
 var tax=income*0.153;
 document.getElementById("result").innerHTML=
-"<strong>Self-Employment Tax: $"+tax.toFixed(2)+"</strong>";
+"<strong>Estimated Self-Employment Tax: $"+tax.toFixed(2)+"</strong>";
 }
 </script>
+
 </body>
 </html>
