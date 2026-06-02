@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1099 Tax Calculator 2026 (USA)</title>
+<meta name="description" content="Free 1099 tax calculator for independent contractors. Estimate self-employment and federal income tax for 2026.">
+<link rel="canonical" href="https://freelancetaxhub.github.io/1099-tax-calculator.html">
+<style>
+body{font-family:Arial;margin:0;background:#fff;color:#222;}
+.container{max-width:900px;margin:auto;padding:20px;}
+h1{color:#0A3D62;}
+.box{background:#f4f6f8;padding:20px;border-radius:8px;}
+input,button{width:100%;padding:10px;margin:8px 0;}
+button{background:#0A3D62;color:#fff;border:none;}
+.result{background:#eaf2f8;padding:15px;margin-top:10px;border-radius:5px;}
+a{color:#0A3D62;text-decoration:none;}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>1099 Tax Calculator 2026</h1>
+<p>Estimate your total 1099 contractor taxes including self-employment and federal income tax.</p>
+
+<div class="box">
+<label>1099 Income ($)</label>
+<input type="number" id="income">
+
+<label>Business Expenses ($)</label>
+<input type="number" id="expenses">
+
+<button onclick="calc()">Calculate</button>
+<div class="result" id="result"></div>
+</div>
+
+<p><a href="index.html">← Back to Home</a></p>
+</div>
+
+<script>
+function calc(){
+var income=parseFloat(document.getElementById("income").value)||0;
+var expenses=parseFloat(document.getElementById("expenses").value)||0;
+var net=income-expenses; if(net<0) net=0;
+var se=net*0.153;
+var fed=net*0.22;
+var total=se+fed;
+document.getElementById("result").innerHTML=
+"Net Income: $"+net.toFixed(2)+"<br>"+
+"Self-Employment Tax: $"+se.toFixed(2)+"<br>"+
+"Federal Tax Estimate: $"+fed.toFixed(2)+"<br>"+
+"<strong>Total Estimated Tax: $"+total.toFixed(2)+"</strong>";
+}
+</script>
+</body>
+</html>
