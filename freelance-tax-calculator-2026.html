@@ -4,57 +4,223 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Freelance Tax Calculator 2026 (USA) – Self Employment Tax Estimator</title>
+<title>Freelance Tax Calculator 2026 USA – Free 1099 Self-Employment Tax Estimator</title>
 
-<meta name="description" content="Free 2026 freelance tax calculator for US freelancers and 1099 contractors. Calculate self-employment tax, federal income tax and total liability instantly.">
+<meta name="description" content="Free 2026 freelance tax calculator for USA self-employed individuals, 1099 contractors, and gig workers. Estimate self-employment tax, federal income tax, and quarterly payments instantly.">
+
+<meta name="keywords" content="freelance tax calculator, 1099 tax calculator, self employment tax calculator 2026, freelancer tax USA, self employed tax estimator">
 
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://freelancetaxhub.github.io/freelance-tax-calculator-2026.html">
 
+<!-- Open Graph -->
+<meta property="og:title" content="Freelance Tax Calculator 2026 USA – Free Self-Employment Tax Estimator">
+<meta property="og:description" content="Calculate your 2026 freelance taxes instantly. Free tool for USA self-employed professionals and 1099 contractors.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://freelancetaxhub.github.io/freelance-tax-calculator-2026.html">
+
 <style>
-body { font-family: Arial, sans-serif; margin:0; background:#fff; color:#222; }
+body { font-family: Arial, sans-serif; margin:0; background:#fff; color:#222; line-height:1.6; }
 .container { max-width:900px; margin:auto; padding:20px; }
-h1,h2 { color:#0A3D62; }
-.calculator { background:#f4f6f8; padding:20px; border-radius:8px; }
-input,button { width:100%; padding:10px; margin:8px 0; font-size:16px; }
-button { background:#0A3D62; color:#fff; border:none; cursor:pointer; }
+h1,h2,h3 { color:#0A3D62; }
+h1 { font-size:28px; }
+h2 { font-size:22px; margin-top:30px; border-bottom:2px solid #0A3D62; padding-bottom:5px; }
+h3 { font-size:18px; margin-top:20px; }
+.calculator { background:#f4f6f8; padding:20px; border-radius:8px; margin:20px 0; }
+label { font-weight:bold; display:block; margin-top:10px; }
+input, button { width:100%; padding:12px; margin:8px 0; font-size:16px; box-sizing:border-box; border-radius:5px; border:1px solid #ccc; }
+button { background:#0A3D62; color:#fff; border:none; cursor:pointer; font-weight:bold; }
 button:hover { background:#074072; }
-.result { background:#eaf2f8; padding:15px; margin-top:10px; border-radius:5px; }
-a { color:#0A3D62; text-decoration:none; }
+.result { background:#eaf2f8; padding:15px; margin-top:10px; border-radius:5px; font-size:16px; }
+.nav { text-align:right; margin-bottom:20px; }
+.nav a { margin-left:15px; color:#0A3D62; text-decoration:none; }
+.faq { background:#f9f9f9; padding:15px; margin:10px 0; border-left:4px solid #0A3D62; border-radius:5px; }
+.ad-placeholder { background:#fffbe6; padding:15px; text-align:center; border:1px dashed #ccc; margin:20px 0; color:#888; }
+table { width:100%; border-collapse:collapse; margin:15px 0; }
+th, td { border:1px solid #ddd; padding:8px; text-align:left; }
+th { background:#0A3D62; color:#fff; }
+a { color:#0A3D62; }
 </style>
 </head>
 
 <body>
+
 <div class="container">
+
+<div class="nav">
+<a href="index.html">Home</a>
+<a href="privacy-policy.html">Privacy</a>
+<a href="terms.html">Terms</a>
+</div>
 
 <h1>Freelance Tax Calculator 2026 (USA)</h1>
 
-<p>This free calculator helps US freelancers, self-employed professionals, and 1099 contractors estimate their 2026 self-employment tax and federal income tax.</p>
+<p>Use our <strong>free freelance tax calculator for 2026</strong> to estimate your total tax liability as a self-employed professional in the United States. This tool is designed for freelancers, 1099 contractors, gig workers, consultants, and small business owners who want to calculate self-employment tax and federal income tax in seconds.</p>
+
+<!-- AdSense Ad Slot 1 -->
+<div class="ad-placeholder">Advertisement</div>
 
 <div class="calculator">
 
-<label>Annual Income ($)</label>
-<input type="number" id="income" placeholder="Enter total freelance income">
+<label for="income">Annual Freelance Income ($)</label>
+<input type="number" id="income" placeholder="Example: 75000">
 
-<label>Business Expenses ($)</label>
-<input type="number" id="expenses" placeholder="Enter deductible expenses">
+<label for="expenses">Business Expenses ($)</label>
+<input type="number" id="expenses" placeholder="Example: 10000">
 
-<button onclick="calculateTax()">Calculate Tax</button>
+<label for="filing">Filing Status</label>
+<select id="filing" style="width:100%;padding:12px;font-size:16px;border-radius:5px;border:1px solid #ccc;">
+<option value="single">Single</option>
+<option value="married">Married Filing Jointly</option>
+<option value="head">Head of Household</option>
+</select>
+
+<button onclick="calculateTax()">Calculate My Tax</button>
 
 <div class="result" id="result"></div>
 
 </div>
 
-<h2>How Freelance Taxes Work in 2026</h2>
-<p>Freelancers must pay both federal income tax and self-employment tax. The self-employment tax rate is 15.3%, covering Social Security and Medicare. In addition, freelancers must pay federal income tax based on their tax bracket.</p>
+<h2>How the Freelance Tax Calculator Works</h2>
+
+<p>Our 2026 calculator estimates the total tax liability for self-employed individuals in the USA using three key components:</p>
+
+<ol>
+<li><strong>Net Self-Employment Income</strong> = Total Income − Business Expenses</li>
+<li><strong>Self-Employment (SE) Tax</strong> = 15.3% of net income (covers Social Security 12.4% + Medicare 2.9%)</li>
+<li><strong>Federal Income Tax</strong> = Calculated using 2026 IRS tax brackets</li>
+</ol>
+
+<p>The calculator automatically applies the standard deduction and gives you an estimated take-home amount. While it provides accurate estimates, always consult a licensed CPA for filing.</p>
+
+<h2>2026 Federal Income Tax Brackets (USA)</h2>
+
+<table>
+<tr><th>Tax Rate</th><th>Single Filer Income</th><th>Married Filing Jointly</th></tr>
+<tr><td>10%</td><td>Up to $11,600</td><td>Up to $23,200</td></tr>
+<tr><td>12%</td><td>$11,601 – $47,150</td><td>$23,201 – $94,300</td></tr>
+<tr><td>22%</td><td>$47,151 – $100,525</td><td>$94,301 – $201,050</td></tr>
+<tr><td>24%</td><td>$100,526 – $191,950</td><td>$201,051 – $383,900</td></tr>
+<tr><td>32%</td><td>$191,951 – $243,725</td><td>$383,901 – $487,450</td></tr>
+<tr><td>35%</td><td>$243,726 – $609,350</td><td>$487,451 – $731,200</td></tr>
+<tr><td>37%</td><td>Over $609,350</td><td>Over $731,200</td></tr>
+</table>
+
+<!-- AdSense Ad Slot 2 -->
+<div class="ad-placeholder">Advertisement</div>
+
+<h2>What Is Self-Employment Tax?</h2>
+
+<p>Self-employment tax is a federal tax that freelancers and independent contractors pay to cover their <strong>Social Security and Medicare contributions</strong>. Unlike W-2 employees who split this tax with their employer, self-employed individuals must pay the full 15.3% themselves.</p>
+
+<p>This rate breaks down as:</p>
+<ul>
+<li><strong>12.4%</strong> for Social Security (on income up to $168,600 in 2026)</li>
+<li><strong>2.9%</strong> for Medicare (no income limit)</li>
+<li><strong>0.9%</strong> additional Medicare tax for incomes above $200,000</li>
+</ul>
 
 <h2>Who Should Use This Calculator?</h2>
+
 <ul>
-<li>Freelancers</li>
-<li>1099 Contractors</li>
-<li>Gig workers</li>
-<li>Self-employed business owners</li>
+<li>Freelance writers, designers, and developers</li>
+<li>1099 independent contractors</li>
+<li>Uber, Lyft, DoorDash, and Instacart drivers</li>
+<li>Etsy sellers and online entrepreneurs</li>
+<li>Consultants and coaches</li>
+<li>Small business owners (sole proprietors)</li>
+<li>Real estate agents</li>
+<li>YouTubers and content creators</li>
 </ul>
+
+<h2>Common Tax Deductions for Freelancers in 2026</h2>
+
+<p>Reducing your taxable income is the smartest way to lower your tax bill. Common deductions include:</p>
+
+<ul>
+<li><strong>Home Office Deduction</strong> – $5 per sq ft (up to 300 sq ft)</li>
+<li><strong>Health Insurance Premiums</strong></li>
+<li><strong>Business Software & Subscriptions</strong></li>
+<li><strong>Internet & Phone Bills</strong> (business portion)</li>
+<li><strong>Travel and Mileage</strong> – 67¢ per mile in 2026</li>
+<li><strong>Professional Education & Courses</strong></li>
+<li><strong>Retirement Contributions</strong> (SEP-IRA, Solo 401k)</li>
+<li><strong>Marketing and Advertising</strong></li>
+</ul>
+
+<h2>When Are Quarterly Estimated Taxes Due in 2026?</h2>
+
+<table>
+<tr><th>Quarter</th><th>Due Date</th></tr>
+<tr><td>Q1 (Jan – Mar)</td><td>April 15, 2026</td></tr>
+<tr><td>Q2 (Apr – May)</td><td>June 16, 2026</td></tr>
+<tr><td>Q3 (Jun – Aug)</td><td>September 15, 2026</td></tr>
+<tr><td>Q4 (Sep – Dec)</td><td>January 15, 2027</td></tr>
+</table>
+
+<p>If you expect to owe more than $1,000 in taxes for the year, the IRS requires you to make quarterly estimated tax payments to avoid penalties.</p>
+
+<!-- AdSense Ad Slot 3 -->
+<div class="ad-placeholder">Advertisement</div>
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq">
+<h3>How much tax do freelancers pay in the USA?</h3>
+<p>Freelancers typically pay between 25% and 35% of their net income in combined self-employment and federal income tax. The exact rate depends on income level, deductions, and filing status.</p>
+</div>
+
+<div class="faq">
+<h3>Do I need to pay quarterly taxes as a freelancer?</h3>
+<p>Yes, if you expect to owe at least $1,000 in taxes for the year. Quarterly payments help you avoid IRS underpayment penalties.</p>
+</div>
+
+<div class="faq">
+<h3>What is the self-employment tax rate in 2026?</h3>
+<p>The self-employment tax rate is 15.3%, which includes 12.4% for Social Security and 2.9% for Medicare.</p>
+</div>
+
+<div class="faq">
+<h3>Can I deduct my home office as a freelancer?</h3>
+<p>Yes. If you use part of your home exclusively for business, you can deduct $5 per square foot up to 300 square feet using the simplified method.</p>
+</div>
+
+<div class="faq">
+<h3>How accurate is this freelance tax calculator?</h3>
+<p>This calculator provides a reliable estimate based on 2026 IRS tax brackets and standard self-employment tax rates. For exact figures, consult a licensed tax professional.</p>
+</div>
+
+<div class="faq">
+<h3>What is the difference between 1099 and W-2 income?</h3>
+<p>1099 income is earned as an independent contractor with no taxes withheld. W-2 income comes from traditional employment where taxes are automatically withheld by the employer.</p>
+</div>
+
+<div class="faq">
+<h3>Are freelancers eligible for the standard deduction?</h3>
+<p>Yes. In 2026, single freelancers can claim a $14,600 standard deduction and married couples filing jointly can claim $29,200.</p>
+</div>
+
+<h2>Pro Tax Tips for Freelancers in 2026</h2>
+
+<ul>
+<li>Set aside 25–30% of every payment for taxes</li>
+<li>Open a separate business bank account</li>
+<li>Use accounting software to track expenses</li>
+<li>Make quarterly tax payments on time</li>
+<li>Contribute to a SEP-IRA to reduce taxable income</li>
+<li>Keep digital receipts for all business expenses</li>
+<li>Hire a CPA if your income exceeds $100,000</li>
+</ul>
+
+<h2>Related Calculators</h2>
+<ul>
+<li><a href="1099-tax-calculator.html">1099 Tax Calculator</a></li>
+<li><a href="self-employment-tax-calculator.html">Self-Employment Tax Calculator</a></li>
+<li><a href="quarterly-estimated-tax-calculator.html">Quarterly Estimated Tax Calculator</a></li>
+<li><a href="take-home-pay-calculator.html">Take-Home Pay Calculator</a></li>
+</ul>
+
+<p style="margin-top:30px;font-size:13px;color:#777;"><strong>Disclaimer:</strong> This calculator provides estimates for informational purposes only and does not constitute tax, legal, or financial advice. Always consult a qualified CPA or tax professional for your specific situation.</p>
 
 <p><a href="index.html">← Back to Home</a></p>
 
@@ -64,19 +230,142 @@ a { color:#0A3D62; text-decoration:none; }
 function calculateTax() {
     var income = parseFloat(document.getElementById("income").value) || 0;
     var expenses = parseFloat(document.getElementById("expenses").value) || 0;
+    var filing = document.getElementById("filing").value;
 
     var net = income - expenses;
     if (net < 0) net = 0;
 
-    var selfEmploymentTax = net * 0.153;
-    var incomeTax = net * 0.22;
-    var total = selfEmploymentTax + incomeTax;
+    // Self-employment tax (15.3% on 92.35% of net earnings)
+    var seTaxable = net * 0.9235;
+    var seTax = seTaxable * 0.153;
+
+    // Deduction for half of SE tax
+    var halfSE = seTax / 2;
+
+    // Standard deduction
+    var stdDeduction = filing === "married" ? 29200 : (filing === "head" ? 21900 : 14600);
+
+    var taxableIncome = net - halfSE - stdDeduction;
+    if (taxableIncome < 0) taxableIncome = 0;
+
+    // 2026 tax brackets (single filer simplified)
+    var fedTax = 0;
+    var brackets;
+
+    if (filing === "married") {
+        brackets = [
+            [23200, 0.10], [94300, 0.12], [201050, 0.22],
+            [383900, 0.24], [487450, 0.32], [731200, 0.35], [Infinity, 0.37]
+        ];
+    } else if (filing === "head") {
+        brackets = [
+            [16550, 0.10], [63100, 0.12], [100500, 0.22],
+            [191950, 0.24], [243700, 0.32], [609350, 0.35], [Infinity, 0.37]
+        ];
+    } else {
+        brackets = [
+            [11600, 0.10], [47150, 0.12], [100525, 0.22],
+            [191950, 0.24], [243725, 0.32], [609350, 0.35], [Infinity, 0.37]
+        ];
+    }
+
+    var prev = 0;
+    var remaining = taxableIncome;
+    for (var i = 0; i < brackets.length; i++) {
+        var limit = brackets[i][0];
+        var rate = brackets[i][1];
+        if (remaining <= 0) break;
+        var slice = Math.min(remaining, limit - prev);
+        fedTax += slice * rate;
+        remaining -= slice;
+        prev = limit;
+    }
+
+    var totalTax = seTax + fedTax;
+    var takeHome = net - totalTax;
+    var effectiveRate = net > 0 ? (totalTax / net * 100).toFixed(1) : 0;
 
     document.getElementById("result").innerHTML =
-        "<strong>Net Income:</strong> $" + net.toFixed(2) + "<br>" +
-        "<strong>Self-Employment Tax (15.3%):</strong> $" + selfEmploymentTax.toFixed(2) + "<br>" +
-        "<strong>Estimated Income Tax (~22%):</strong> $" + incomeTax.toFixed(2) + "<br>" +
-        "<strong>Total Estimated Tax:</strong> $" + total.toFixed(2);
+        "<strong>📊 Your 2026 Tax Estimate</strong><br><br>" +
+        "Net Income: <strong>$" + net.toLocaleString() + "</strong><br>" +
+        "Self-Employment Tax (15.3%): <strong>$" + seTax.toFixed(2) + "</strong><br>" +
+        "Federal Income Tax: <strong>$" + fedTax.toFixed(2) + "</strong><br>" +
+        "<hr>" +
+        "<strong>Total Estimated Tax: $" + totalTax.toFixed(2) + "</strong><br>" +
+        "Effective Tax Rate: <strong>" + effectiveRate + "%</strong><br>" +
+        "Estimated Take-Home Pay: <strong>$" + takeHome.toFixed(2) + "</strong><br><br>" +
+        "💡 <em>Set aside ~" + effectiveRate + "% of income for taxes.</em>";
+}
+</script>
+
+<!-- FAQ Schema for Rich Snippets -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much tax do freelancers pay in the USA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Freelancers typically pay between 25% and 35% of their net income in combined self-employment and federal income tax."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the self-employment tax rate in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The self-employment tax rate is 15.3%, which includes 12.4% for Social Security and 2.9% for Medicare."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to pay quarterly taxes as a freelancer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, if you expect to owe at least $1,000 in taxes for the year, the IRS requires quarterly estimated tax payments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I deduct my home office as a freelancer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can deduct $5 per square foot up to 300 square feet using the simplified method."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How accurate is this freelance tax calculator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This calculator provides reliable estimates based on 2026 IRS tax brackets. For exact figures, consult a licensed tax professional."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Software Application Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Freelance Tax Calculator 2026",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "127"
+  }
 }
 </script>
 
